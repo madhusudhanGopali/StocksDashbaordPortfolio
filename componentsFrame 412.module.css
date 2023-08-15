@@ -1,0 +1,35 @@
+.cardsGraphTransaction {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-11xl);
+}
+.cardsGraphTransaction,
+.dashboarddata,
+.dashboarddataParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboarddata {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-12xl);
+}
+.dashboarddataParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--size-14-size-14-semibold-size);
+  color: var(--text-color-text-2);
+  font-family: var(--size-12-size-12-regular);
+}
+@media screen and (max-width: 1200px) {
+  .dashboarddata {
+    flex: unset;
+    align-self: stretch;
+  }
+  .dashboarddataParent {
+    flex-direction: column;
+  }
+}

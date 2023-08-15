@@ -1,0 +1,40 @@
+.icon {
+  width: 42px;
+  height: 42px;
+}
+.b,
+.icon,
+.netWorth {
+  position: relative;
+}
+.b {
+  font-size: var(--font-size-5xl);
+  color: var(--text-color-pure-white);
+}
+.totalBalance,
+.totalBalance1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.totalBalance {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--darkish-color-dark-2);
+  flex-direction: row;
+  padding: var(--padding-5xl) var(--padding-xl);
+  align-items: center;
+  gap: var(--gap-mini);
+  text-align: left;
+  font-size: var(--size-14-size-14-semibold-size);
+  color: var(--text-color-text-2);
+  font-family: var(--size-12-size-12-regular);
+}
+@media screen and (max-width: 960px) {
+  .totalBalance {
+    flex: unset;
+    align-self: stretch;
+  }
+}

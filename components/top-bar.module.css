@@ -1,0 +1,78 @@
+.dashboard {
+  position: relative;
+  font-weight: 600;
+}
+.search11Icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-26xl);
+}
+.nameavaterChild {
+  position: relative;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+.nicolasAguirre {
+  position: relative;
+  font-weight: 600;
+}
+.nameavater {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.dropdownIcon {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.name {
+  border-radius: var(--br-81xl);
+  background-color: var(--darkish-color-dark-1);
+  width: 215px;
+  padding: var(--padding-7xs) var(--padding-mini) var(--padding-7xs)
+    var(--padding-6xs);
+  box-sizing: border-box;
+}
+.name,
+.topBar,
+.topBar1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.topBar1 {
+  width: 353px;
+  font-size: var(--size-14-size-14-semibold-size);
+}
+.topBar {
+  align-self: stretch;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--text-color-pure-white);
+  font-family: var(--size-12-size-12-regular);
+}
+@media screen and (max-width: 960px) {
+  .dashboard {
+    display: none;
+  }
+  .topBar1 {
+    flex: 1;
+  }
+}

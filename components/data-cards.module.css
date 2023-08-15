@@ -1,0 +1,17 @@
+.cards {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+  text-align: left;
+  font-size: var(--size-14-size-14-semibold-size);
+  color: var(--text-color-text-2);
+  font-family: var(--size-12-size-12-regular);
+}
+@media screen and (max-width: 960px) {
+  .cards {
+    flex-direction: column;
+  }
+}

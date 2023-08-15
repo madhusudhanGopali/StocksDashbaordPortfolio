@@ -1,0 +1,14 @@
+.image12Icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+@media screen and (max-width: 960px) {
+  .image12Icon {
+    height: auto;
+  }
+}

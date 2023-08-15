@@ -1,0 +1,22 @@
+.dashboard,
+.dashboardcontent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardcontent {
+  align-self: stretch;
+  flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 35px 45px;
+  gap: var(--gap-11xl);
+}
+.dashboard {
+  position: relative;
+  background-color: var(--darkish-color-dark-bg);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: row;
+}

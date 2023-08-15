@@ -1,0 +1,133 @@
+.excludeIcon,
+.maglo {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.maglo {
+  display: inline-block;
+  width: 80px;
+  height: 23px;
+  flex-shrink: 0;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.dashboardIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dashboard {
+  position: relative;
+  font-weight: 600;
+}
+.bar {
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-color);
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-mini);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  color: var(--text-color-text-1);
+}
+.transactionsIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.transactions {
+  position: relative;
+  font-weight: 500;
+}
+.bar1,
+.option {
+  justify-content: flex-start;
+}
+.bar1 {
+  border-radius: var(--br-5xs);
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-mini);
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.option {
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.main,
+.navbar,
+.option,
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+}
+.main {
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--size-14-size-14-semibold-size);
+  color: var(--text-color-text-2);
+  font-family: var(--size-12-size-12-regular);
+}
+.navbar,
+.sidebar {
+  align-self: stretch;
+}
+.sidebar {
+  background-color: var(--darkish-color-dark-shade);
+  flex-direction: column;
+  padding: var(--padding-11xl) var(--padding-6xl) var(--padding-81xl);
+  justify-content: center;
+  gap: var(--gap-21xl);
+}
+.navbar {
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--extra-font-size-18-semibold-size);
+  color: var(--text-color-pure-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .dashboard,
+  .maglo {
+    display: none;
+  }
+  .bar {
+    width: auto;
+    align-self: unset;
+  }
+  .transactions {
+    display: none;
+  }
+  .bar1 {
+    width: auto;
+    align-self: unset;
+  }
+  .sidebar {
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar:hover .maglo {
+    display: flex;
+  }
+  .navbar:hover .dashboard,
+  .navbar:hover .transactions {
+    display: flex;
+    width: 120px;
+  }
+}
